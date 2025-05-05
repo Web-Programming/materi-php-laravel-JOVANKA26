@@ -3,7 +3,7 @@
 use Illuminate\Support\Facades\Route;
 use Pest\Plugins\Profile;
 
-Route::get('/', function () {
+Route::get('/home', function () {
     return view('home');
 });
 
@@ -15,3 +15,4 @@ Route::get('/berita/{id}/{title}', function ($id, $title = NULL) {
     return view('berita', ['id' => '$id', 'title'=> $title ]);
 });
 
+#
