@@ -1,8 +1,12 @@
 <?php
 
-use App\Http\Controllers\MhsApiController;
 use Illuminate\Support\Facades\Route;  
-use Illuminate\Support\Facades\Auth;
+use App\Http\Controllers\MhsApiController; 
+use App\Http\Controllers\MateriController; 
+use App\Http\Controllers\ProdiController;
+use App\Http\Controllers\FakultasController;
+use App\Http\Controllers\MahasiswaController;
+use App\Http\Controllers\DosenController;
 
 Route::get('/', function () {
     return view('home');
@@ -28,11 +32,20 @@ Route::get('/fakultas', function () {
     return view('fakultas.index', compact('fakultas', 'kampus'));
 });
 
-Route::get('/materi/index', 
-[materi::class, 'index']);
-
-Route::resource('prodi',
-ProdiController::class);
-
 Route::apiResource('api/mhs', 
 MhsApiController::class);
+
+Route::resource('materi', 
+MateriController::class);
+
+Route::resource('prodi', 
+ProdiController::class);
+
+Route::resource('fakultas', 
+FakultasController::class);
+
+Route::resource('mhs', 
+MahasiswaController::class);
+
+Route::resource('dosen', 
+DosenController::class);
