@@ -49,3 +49,7 @@ MahasiswaController::class);
 
 Route::resource('dosen', 
 DosenController::class);
+
+Route::get('/master', function(){
+    return view('latihanLayout.master');
+});
