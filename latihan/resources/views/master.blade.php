@@ -116,7 +116,7 @@
         <li class="user-header bg-primary">
           <img src="dist/img/user2-160x160.jpg" class="img-circle elevation-2" alt="User Image">
           <p>
-            Fernando Antonius - 2428250014
+            M.Jovanka Slavia Wijaya - 2428250079
             <small>Member since 2024</small>
           </p>
         </li>
