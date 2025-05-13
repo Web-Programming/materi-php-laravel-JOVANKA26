@@ -38,21 +38,21 @@ class MahasiswaController extends Controller
     {
         $mahasiswaList = [
             1 => (object)[
-                'nama' => 'Budiman Putra Beriman',
+                'nama' => 'Yuda',
                 'program' => 'Sistem Informasi',
                 'status' => 'Aktif',
                 'tanggal_lahir' => '10-10-2006',
                 'tempat_lahir' => 'Palembang'
             ],
             2 => (object)[
-                'nama' => 'Luther',
+                'nama' => 'Dandi',
                 'program' => 'Teknik Elektro',
                 'status' => 'Cuti',
                 'tanggal_lahir' => '10-03-2006',
                 'tempat_lahir' => 'Palembang'
             ],
             3 => (object)[
-                'nama' => 'Fernando',
+                'nama' => 'Tio',
                 'program' => 'Informatika',
                 'status' => 'Aktif',
                 'tanggal_lahir' => '15-02-2007',
